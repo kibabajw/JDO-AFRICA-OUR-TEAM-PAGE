@@ -57,19 +57,11 @@ body {
     }
 }
 
-@keyframes rotateanimation {
-    from {
-        transform: rotate(0deg);       
-    } to {
-        transform: rotate(360deg);        
-    }
-}
-
 .image-molecules {
   position: absolute;
     cursor: pointer;
     width: 60px;
-    height: 60px; 
+    height: 60px;    
     /* transform-origin: 100%; */
     /* animation: rotateanimation 19.6s linear infinite 1s; */
 }
@@ -83,17 +75,34 @@ body {
 }
 
 .molecule-1 {
-    margin-top: 180px;
-    /* transform-origin: 50% -120px; */
-    transform-origin: 50% -100%;
-    animation: rotateanimation 19.6s linear infinite 0s;
-    /* animation: pushdown 2s cubic-bezier(0.215, 0.610, 0.355, 1) 1s; */
+  width: 60px;
+  height: 60px;
+  margin-top: 180px;
+  /* transform-origin: 50% -120px; */
+  transform-origin: 50% -100%;
+  animation-fill-mode: forwards;
+  animation: rotateanimation 19.6s linear infinite 0s;
+  /* animation: pushdown 2s cubic-bezier(0.215, 0.610, 0.355, 1) 1s; */
 }
- 
+
+.molecule-1 > img {    
+  width: 60px;
+  height: 60px;
+  animation: preserveimageorientation 19.6s linear infinite;
+}
+
 .molecule-2 {
+  width: 60px;
+  height: 60px;
     margin-top: 320px;
     transform-origin: 50% -200%;
     animation: rotateanimation 19.6s linear infinite 2s;
+}
+
+.molecule-2 > img {    
+  width: 60px;
+  height: 60px;
+  animation: preserveimageorientation 19.6s linear infinite 2s;
 }
 
 .molecule-3 {
@@ -102,10 +111,22 @@ body {
     animation: rotateanimation 19.6s linear infinite 4s;
 }
 
+.molecule-3 > img {    
+  width: 60px;
+  height: 60px;
+  animation: preserveimageorientation 19.6s linear infinite 4s;
+}
+
 .molecule-4 {
   margin-top: 600px;
   transform-origin: 50% -400%;
   animation: rotateanimation 19.6s linear infinite 6s;
+}
+
+.molecule-4 > img {    
+  width: 60px;
+  height: 60px;
+  animation: preserveimageorientation 19.6s linear infinite 6s;
 }
 
 .molecule-5 {
@@ -114,10 +135,22 @@ body {
   animation: rotateanimation 19.6s linear infinite 8s;
 }
 
+.molecule-5 > img {    
+  width: 60px;
+  height: 60px;
+  animation: preserveimageorientation 19.6s linear infinite 8s;
+}
+
 .molecule-6 {
   margin-top: 880px;
   transform-origin: 50% -600%;
   animation: rotateanimation 19.6s linear infinite 10s;
+}
+
+.molecule-6 > img {    
+  width: 60px;
+  height: 60px;
+  animation: preserveimageorientation 19.6s linear infinite 10s;
 }
 
 .molecule-7 {
@@ -126,10 +159,22 @@ body {
   animation: rotateanimation 19.6s linear infinite 12s;
 }
 
+.molecule-7 > img {    
+  width: 60px;
+  height: 60px;
+  animation: preserveimageorientation 19.6s linear infinite 12s;
+}
+
 .molecule-8 {
   margin-top: 1160px;
   transform-origin: 50% -800%;
   animation: rotateanimation 19.6s linear infinite 14s;
+}
+
+.molecule-8 > img {    
+  width: 60px;
+  height: 60px;
+  animation: preserveimageorientation 19.6s linear infinite 14s;
 }
 
 .molecule-9 {
@@ -138,10 +183,22 @@ body {
   animation: rotateanimation 19.6s linear infinite 16s;
 }
 
+.molecule-9 > img {    
+  width: 60px;
+  height: 60px;
+  animation: preserveimageorientation 19.6s linear infinite 16s;
+}
+
 .molecule-10 {
   margin-top: 1440px;
   transform-origin: 50% -1000%;
   animation: rotateanimation 19.6s linear infinite 18s;
+}
+
+.molecule-10 > img {    
+  width: 60px;
+  height: 60px;
+  animation: preserveimageorientation 19.6s linear infinite 18s;
 }
 
 .molecule-11 {
@@ -150,7 +207,30 @@ body {
   animation: rotateanimation 19.6s linear infinite 20s;
 }
 
+.molecule-11 > img {    
+  width: 60px;
+  height: 60px;
+  animation: preserveimageorientation 19.6s linear infinite 20s;
+}
 
+
+
+@keyframes rotateanimation {
+  from {
+      transform: rotate(0deg);       
+  } to {
+      transform: rotate(360deg);        
+  }
+}
+
+@keyframes preserveimageorientation {
+  from {
+    transform: rotate(360deg);
+  } to {
+    transform: rotate(0deg);
+  }
+}
+ 
 
 
 
