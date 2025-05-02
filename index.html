@@ -4,38 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JDO Our Team</title>
+    <style>
+      /* util classes */
+        .border-black {
+            border: 2px solid #333;  
+        }
+        .circular {
+            border-radius: 50%;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&family=Pochaevsk&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="our-team">
-        <img src="./images/fb.jpg" id="logo-as-sun" />
-        <div class="image-molecules circular molecule-1"><img src="./images/collins_obayi.jpg" class="circular"/></div>
-        <div class="image-molecules circular molecule-2"><img src="./images/Damaris _Kamanthe.jpg" class="circular" /></div>
-        <div class="image-molecules circular molecule-3"><img src="./images/Edward_Musungu.jpg" class="circular" /></div>
-        <div class="image-molecules circular molecule-4"><img src="./images/Elijah_Kyalo.jpg" class="circular" /></div>
-        <div class="image-molecules circular molecule-5"><img src="./images/Emmanuel_Loboka.jpg" class="circular" /></div>
-        <div class="image-molecules circular molecule-6"><img src="./images/Fr._Charles.png" class="circular" /></div>
-        <div class="image-molecules circular molecule-7"><img src="./images/fr_allan_ggita_10.png" class="circular"/></div>
-        <div class="image-molecules circular molecule-8"><img src="./images/Francis_Ayika.png" class="circular" /></div>
-        <div class="image-molecules circular molecule-9"><img src="./images/Nelly_Agisa.jpg" class="circular" /></div>
-        <div class="image-molecules circular molecule-10"><img src="./images/our team_Page_07.png" class="circular" /></div>
-        <div class="image-molecules circular molecule-11"><img src="./images/our team_Page_09.png" class="circular" /></div>
+    <div id="our-team">  
+        <!-- Caroline Sanga       -->
+        <div class="div-staff-info" id="caroline-sanga">
+            <div class="staff-name">Caroline Sanga</div>
+            <div class="staff-position">Programmes Officer South Sudan</div>
+        </div>     
+        <!-- collins obayi -->
+        <div class="div-staff-info" id="collins-obayi">
+            <div class="staff-name">Collins Oyule Ob'bayi</div>
+            <div class="staff-position">Finance Officer</div>
+        </div>    
+        <!-- Edward Musungu -->
+        <div class="div-staff-info" id="edward-musungu">
+            <div class="staff-name">Edward Musungu</div>
+            <div class="staff-position">Communications Officer</div>
+        </div>   
+        <!-- Elijah Kyalo -->
+        <div class="div-staff-info" id="elijah-kyalo">
+            <div class="staff-name">Elijah King'oo Kyalo</div>
+            <div class="staff-position">Grounds and Hygiene Officer</div>
+        </div>  
+        <!-- Emmanuel Loboka -->
+        <div class="div-staff-info" id="emmanuel-loboka">
+            <div class="staff-name">Emmanuel Loboka</div>
+            <div class="staff-position">Communications Officer South Sudan</div>
+        </div> 
+        <!-- Fr Charles -->
+        <div class="div-staff-info" id="fr-charles">
+            <div class="staff-name">Fr George Macharia Njeri, SJ.</div>
+            <div class="staff-position">Projects - Nairobi Area</div>
+        </div> 
+        <!-- Fr Allan Ggita -->
+        <div class="div-staff-info" id="fr-allan-ggita">
+            <div class="staff-name">Fr Allan Ggita</div>
+            <div class="staff-position">Director</div>
+        </div>
+        <!-- Francis Ayika -->
+        <div class="div-staff-info" id="francis-ayika">
+            <div class="staff-name">Francis Ayika</div>
+            <div class="staff-position">Security</div>
+        </div>
+        <!-- Nelly Agisa -->
+        <div class="div-staff-info" id="nelly-agisa">
+            <div class="staff-name">Nelly Agisa</div>
+            <div class="staff-position">Ag. Programmes Officer</div>
+        </div>
+        <!-- Pete Okapes -->
+        <div class="div-staff-info" id="pete-okapes">
+            <div class="staff-name">Pete Okapes</div>
+            <div class="staff-position">Office Assistant</div>
+        </div>
+        <!-- Victor-Awiti-Otieno -->
+        <div class="div-staff-info" id="victor-awiti-otieno">
+            <div class="staff-name">Victor-Awiti-Otieno</div>
+            <div class="staff-position">Workshop Manager</div>
+        </div>
 
-        <!-- <div class="preloader">
-            <div class="atom">
-              <div class="nucleus"></div>
-              <img src="./images/logo.png" class="nucleus" />
-              <div class="orbit orbit1">
-                <div class="electron"><img src="./images/collins_obayi.jpg" class="image-molecules circular" /></div>
-              </div>
-              <div class="orbit orbit2">
-                <div class="electron"><img src="./images/Damaris _Kamanthe.jpg" class="image-molecules circular" /></div>
-              </div>
-              <div class="orbit orbit3">
-                <div class="electron"><img src="./images/Edward_Musungu.jpg" class="image-molecules circular" /></div>
-              </div>
-            </div>
-          </div> -->
+        <img src="./logos/jdo-logo.jpg" id="logo-as-sun" />
+
+        <div id="ring1"><img src="./images/Caroline-Sanga.png" class="circular image-molecules"/></div>
+        <div id="ring2"><img src="./images/collins-obayi.jpg" class="circular image-molecules" /></div>
+        <div id="ring3"><img src="./images/Edward-Musungu.jpg" class="circular image-molecules" /></div>
+        <div id="ring4"><img src="./images/Elijah-Kyalo.jpg" class="circular image-molecules" /></div>
+        <div id="ring5"><img src="./images/Emmanuel-Loboka.jpg" class="circular image-molecules" /></div>
+        <div id="ring6"><img src="./images/Fr--Charles.png" class="circular image-molecules"/></div>
+        <div id="ring7"><img src="./images/fr-allan-ggita.png" class="circular image-molecules"/></div>
+        <div id="ring8"><img src="./images/Francis-Ayika.png" class="circular image-molecules"/></div>
+        <div id="ring9"><img src="./images/Nelly-Agisa.jpg" class="circular image-molecules"/></div>
+        <div id="ring10"><img src="./images/Pete-Okapes.jpg" class="circular image-molecules"/></div>
+        <div id="ring11"><img src="./images/Victor-Awiti-Otieno.jpg" class="circular image-molecules"/></div>
     </div>
+    
+    <script src="./jQuery/jquery-3.7.1.min.js"></script>
+    <script src="our-team.js"></script>
 </body>
 </html>
